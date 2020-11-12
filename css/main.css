@@ -1,0 +1,333 @@
+body {
+    font-family: "Roboto";
+    font-size: 16px;
+    color: white !important;
+    background-color: #000000c7 !important;
+}
+
+#buffs {
+    position: absolute;
+    top: 50px;
+    left: 30%;
+    min-height: 80px;
+    width: 70%;
+    padding: 20px;   
+}
+
+#buffs .buff {
+    display: inline-block;
+    float: right;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    background-color: fuschia;
+    text-align: center;
+}
+
+#buffs .buff .art {
+    width: 50px;
+    height: 50px;
+    border-radius: 2px;
+}
+
+#fps-counter {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1;
+}
+
+#swing-timer {
+    display: block;
+    position: relative;
+    height: 50px;
+    background-color: #20262e;
+    border: solid;
+    border-thickness: 1px;
+    border-color: black;
+    border-radius: 2px;
+    margin: 20px;
+}
+
+#swing-timer .value {
+    display: block;
+    width: 0px;
+    height: 100%;
+    background: rgba(255, 185, 0, 0.2);
+}
+
+.navbar {
+    height: 50px;
+    background-color: #20262e;
+    margin-bottom: 40px;
+    border-bottom: solid;
+    border-thickness: 1px;
+    border-color: black;
+}
+
+#swing-timer .label {
+    color: white;
+    display: inline-block;
+    position: absolute;
+    top: 25%;
+    left: 0;
+    width: 100%;
+}
+
+.centered {
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+}
+/*
+Start of Tooltip styles
+*/
+.tool-tip {
+    display: none;
+    min-height: 150px;
+    min-width: 200px;
+    max-width: 500px;
+    background-color: black;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 1;
+    opacity: 0.7;
+}
+
+.tool-tip .spell .description {
+    color: gold;
+}
+
+.tool-tip .spell .cooldown {
+    float: right;
+}
+
+.tool-tip .spell .rank {
+    float: right;
+    color: grey;
+}
+
+/*
+End of Tooltip styles
+*/
+
+.nameplate {
+    display: block;
+    position: relative;
+    height: 100px;
+    color: white;
+    margin: 20px;
+}
+
+.nameplate .level {
+    float: right;
+}
+
+.health-bar {
+    position: relative;
+    height: 50px;
+    background-color: #20262e;
+    border: solid;
+    border-thickness: 1px;
+    border-color: black;
+}
+
+.health-bar .value {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: brown;
+}
+
+.warrior {
+    background-color: burlywood;
+}
+
+.health-bar .label {
+    color: white;
+    display: inline-block;
+    position: absolute;
+    top: 25%;
+    left: 0;
+    width: 100%;
+}
+
+#boss {
+    height: 300px;
+}
+
+#action-bar {
+    text-align: left;
+    margin-top: 20px;
+}
+
+#action-bar .action {
+    position: relative;
+    margin: auto;
+    display: inline-block;
+    height: 62px;
+    width: 62px;
+    margin: 5px;
+    border: solid;
+    border-thickness: 1px;
+    border-color: black;
+    border-radius: 2px;
+    background-color: #20262e;
+    background-size: 60px 60px;
+    background-repeat: no-repeat;
+    user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+}
+
+#action-bar .action:hover {
+    border-thickness: 1px;
+    border-color: gold;
+    border-radius: 2px;
+    opacity: 0.6;
+}
+
+.action .hotkey-text {
+    margin-top: 2px;
+    margin-left: 2px;
+    color: white;
+}
+
+.action .on-cooldown {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    opacity: 0.5;
+}
+
+.action .cooldown-remaining {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin-top: -25px;
+    font-size: 30px;
+    color: white;
+    z-index: 2;
+    text-align: center;
+}
+
+.target {
+    position: relative;
+}
+
+.target .combat-text {
+    position: absolute;
+    font-family: "Baloo Bhai", cursive;
+    font-size: 56px;
+    height: 200px;
+    width: 200px;
+    top: 0;
+    left: 50%;
+    margin-left: -120px;
+}
+
+.energy-bar {
+    position: relative;
+    height: 35px;
+    background-color: #20262e;
+    border: solid;
+    border-thickness: 1px;
+    border-color: black;
+}
+
+.energy-bar .value {
+    display: block;
+    width: 0%;
+    height: 100%;
+    background: red;
+}
+
+.energy-bar .label {
+    color: white;
+    display: inline-block;
+    position: absolute;
+    top: 15%;
+    left: 0;
+    width: 100%;
+}
+
+.white-hit {
+    font-size: 42px;
+    color: black;
+    -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+}
+
+.yellow-hit {
+    font-size: 42px;
+    color: black;
+    -webkit-text-fill-color: gold; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+}
+
+.crit {
+    font-size: 68px;
+    -webkit-text-stroke-width: 2px;
+}
+
+#combat-log {
+    height: 230px;
+    width: 600px;
+    background-color: #20262e;
+    color: white;
+    font-size: 12px;
+    overflow: hidden;
+    margin: 20px;
+    padding-left: 0;
+    padding-right: 0;
+    border: solid;
+    border-thickness: 1px;
+    border-color: black;
+    border-radius: 2px;
+}
+
+#combat-log .header {
+    border-bottom: solid;
+    border-color: black;
+    border-thickness: 1px;
+    padding: 5px;
+    padding-left: 10px;
+}
+
+#combat-log .messages {
+    height: 200px;
+    overflow: auto;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+#combat-log .message {
+    padding: 2px;
+}
+
+#combat-log .time {
+    color: #929292;
+    margin-right: 5px;
+}
+
+#notifications {
+    position: relative;
+    height: 78px;
+    overflow: hidden;
+    z-index: 1;
+}
+
+#notifications .error {
+    color: red;
+    font-weight: bold;
+    display: block;
+}

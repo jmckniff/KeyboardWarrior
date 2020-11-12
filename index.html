@@ -1,0 +1,137 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/hotkeys-js/dist/hotkeys.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/gear.js"></script>
+</head>
+
+<body>
+
+    <div class="container-fluid">
+
+        <span id="fps-counter"></span>
+        
+        <div id="tool-tips"></div>
+        
+        <div class="row">
+            <div class="navbar col-md">
+            </div>
+            <div id="buffs">
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md">
+            </div>
+            <div id="notifications" class="col-md text-center">
+                <span class="error"></span>
+            </div>
+            <div class="col-md">
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md">
+            </div>
+            <div class="col-md text-center">
+                <div id="boss" class="target">
+                    <div class="combat-text" style="font-size: 48px; color: black;">
+                    </div>
+                    <img class="avatar" src="http://pa1.narvii.com/6054/567e892d5bbc577422eb72d2805da60fa04fe814_00.gif" />
+                </div>
+            </div>
+            <div class="col-md">
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md">
+                <div id="player" class="nameplate">
+                    <div>
+                        <span class="name">Chobo</span>
+                        <span class="level">60</span>
+                    </div>
+                    <div class="health-bar">
+                        <span class="value warrior"></span>
+                        <span class="label text-center"></span>
+                    </div>
+                    <div class="energy-bar">
+                        <span class="value"></span>
+                        <span class="label text-center"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md">
+            </div>
+
+            <div class="col-md">
+                <div id="target" class="nameplate" style="display:none;">
+                    <div>
+                        <span class="name">Golemagg</span>
+                        <span class="level pull-right">63</span>
+                    </div>
+                    <div class="health-bar">
+                        <span class="value"></span>
+                        <span class="label text-center">360000</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md">
+            </div>
+
+            <div class="col-md-3">
+                <div id="swing-timer">
+                    <span class="value"></span>
+                    <span class="label text-center"></span>
+                </div>
+            </div>
+
+            <div class="col-md">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md"></div>
+            <div id="action-bar" class="col-md text-left">
+                <span id="bloodthirst" class="action">
+                    <span class="hotkey-text">1</span>
+                </span>
+                <span id="battle-shout", class="action">
+                    <span class="hotkey-text">2</span>
+                </span>
+                <span id="bloodrage" class="action">
+                    <span class="hotkey-text">3</span>
+                </span>
+                <span class="action">
+                    <span class="hotkey-text">4</span>
+                </span>
+                <span class="action">
+                    <span class="hotkey-text">5</span>
+                </span>
+            </div>
+            <div id="combat-log" class="col-md-4">
+                <div class="header">
+                    Combat Log
+                </div>
+                <div class="messages">
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
